@@ -1,2 +1,2 @@
 # lecture1
-CS50W 2018 - Lecture 1
+CS50W 2020 - Lecture 1
