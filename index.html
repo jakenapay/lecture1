@@ -6,50 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecture 1</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <section class="introduction">
-        <h1>Lecture 1</h1>
-        <p>This is another lecture.</p>
+    <div id="wrapper">
+        <section class="introduction">
+            <h1 class="title">Lecture 1</h1>
+            <p class="subtitle">Documentation of important points in lecture 1 </p>
+            <br>
+            <hr><br>
+            <p>A form example with design of CSS</p>
+        </section>
+
+        <form action="" id="form1">
+            <fieldset id="personal-information" class="fieldsets">
+                <legend>Personal Information</legend>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name" id="name" name="name">
+
+                <label for="address">Address</label>
+                <input type="text" placeholder="Address" id="address" name="address">
+
+                <label for="age">Age</label>
+                <input type="number" placeholder="Age" id="age" name="age" min="1" max="100">
+            </fieldset>
+            <fieldset id="business" class="fieldsets">
+                <legend>Business Information</legend>
+                <label for="company_name">Company Name</label>
+                <input type="text" placeholder="Company Name" id="company_name" name="company_name">
+                <label for="address">Company Address</label>
+                <input type="text" placeholder="Company Address" id="company_address" name="company_address">
+
+                <!-- Company continents based -->
+                <label for="continent">Continent Location</label>
+                <input name="continent" id="continent" list="continents" placeholder="Continent Location">
+                <datalist id="continents">
+                    <option value="Africa">
+                    <option value="Asia">
+                    <option value="Antartica">
+                    <option value="Australia">
+                    <option value="Europe">
+                    <option value="North America">
+                    <option value="South America">
+                </datalist>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
         <br>
         <hr><br>
-        <p>A form example</p>
-    </section>
+        <section id="css-selector">
+            <p class="title">CSS Selector</p>
+            <p class="subtitle">I just want to put it in here.</p>
+            <br>
+            <p>There are several ways to select an element with CSS Selectors.</p>
+            <p><i>For example:</i></p>
 
-    <form action="">
-        <fieldset id="personal-information">
-            <legend>Personal Information</legend>
-            <label for="name">Name</label>
-            <input type="text" placeholder="Name" id="name" name="name">
+            <ul class="ul-examples">
+                <li><a href="https://Amazon.com" target="_blank">Amazon</a></li>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="http://google.com" target="_blank">Google</a></li>
+            </ul>
+            <p>Now I'm going to color the <b>Amazon</b> link only. By using the
+                <code>ul > li > a[href="https://Amazon.com"]</code>. And by using this selector, it will select the
+                anchor tag which has an href attribute and a value of
+            <blockquote>https://Amazon.com</blockquote>
+            </p>
 
-            <label for="address">Address</label>
-            <input type="text" placeholder="Address" id="address" name="address">
-
-            <label for="age">Age</label>
-            <input type="number" placeholder="Age" id="age" name="age" min="1" max="100">
-        </fieldset>
-        <fieldset id="business">
-            <legend>Business Information</legend>
-            <label for="company_name">Company Name</label>
-            <input type="text" placeholder="Company Name" id="company_name" name="company_name">
-            <label for="address">Company Address</label>
-            <input type="text" placeholder="Company Address" id="company_address" name="company_address">
-
-            <!-- Company continents based -->
-            <input name="continent" list="continents" placeholder="Continent Location">
-            <datalist id="continents">
-                <option value="Africa">
-                <option value="Asia">
-                <option value="Antartica">
-                <option value="Australia">
-                <option value="Europe">
-                <option value="North America">
-                <option value="South America">
-            </datalist>
-        </fieldset>
-        <button type="submit">Submit</button>
-    </form>
+        </section>
+    </div>
 
 </body>
 

@@ -1,0 +1,63 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(255, 0, 0);
+}
+
+body {
+    /* background-color: var(--primary-color); */
+    margin: 0px;
+    padding: 0;
+}
+
+#wrapper {
+    /* top left-right bottom */
+    margin: 50px 100px 50px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* FORM 1 */
+#form1 {
+    margin: 20px;
+    width: 70%;
+}
+
+.fieldsets {
+    padding: 20px;
+    margin: 10px;
+}
+
+.fieldsets>label {
+    display: block;
+    width: 100%;
+    margin: 10px 5px 5px;
+}
+
+.fieldsets>input {
+    display: block;
+    width: 100%;
+    margin: 5px;
+}
+
+.highlighted-text {
+    font-weight: 600;
+}
+
+/* CSS SELECTORS */
+.ul-examples {
+    margin: 20px;
+}
