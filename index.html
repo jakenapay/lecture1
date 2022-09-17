@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- the code below is the meta for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lecture 1</title>
     <link rel="stylesheet" href="styles.css">
@@ -54,7 +55,8 @@
             <button type="submit">Submit</button>
         </form>
         <br>
-        <hr><br>
+        <hr>
+        <br>
         <section id="css-selector">
             <p class="title">CSS Selector</p>
             <p class="subtitle">I just want to put it in here.</p>
@@ -67,12 +69,117 @@
                 <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
                 <li><a href="http://google.com" target="_blank">Google</a></li>
             </ul>
-            <p>Now I'm going to color the <b>Amazon</b> link only. By using the
-                <code>ul > li > a[href="https://Amazon.com"]</code>. And by using this selector, it will select the
-                anchor tag which has an href attribute and a value of
-            <blockquote>https://Amazon.com</blockquote>
+            <p>
+                You can select the link or anchor tag with the specified href atrribute value.<br>For Example:
+                <br><code>a[href="https://facebook.com"]</code>
             </p>
-
+        </section>
+        <br>
+        <hr>
+        <br>
+        <section class="responsive-design">
+            <p class="title">Responsive Design</p>
+            <p class="subtitle">I just want to put it in here.</p>
+            <br>
+            <p class="subtitle">Media Query</p>
+            <p>For example: <code>@media (min-width: 700px) { background-color: red;}</code>. This CSS code will tell
+                that if the screen is 700px and wider, the background color should be red.</p>
+            <br>
+            <br>
+            <p>Another example: <code>@media (max-width: 699px) { background-color: blue;}</code>. This CSS code will
+                tell that if the screen is 699px and smaller, the background color should be blue.</p>
+            <br>
+            <hr class="sub-hr">
+            <br>
+            <p class="subtitle">Flexbox</p>
+            <div id="container">
+                <div>1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad minima perspiciatis eius architecto
+                    ab
+                    ex!</div>
+                <div>2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad minima perspiciatis eius architecto
+                    ab
+                    ex!</div>
+                <div>3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad minima perspiciatis eius architecto
+                    ab
+                    ex!</div>
+                <div>4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad minima perspiciatis eius architecto
+                    ab
+                    ex!</div>
+                <div>5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad minima perspiciatis eius architecto
+                    ab
+                    ex!</div>
+                <div>6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad minima perspiciatis eius architecto
+                    ab
+                    ex!</div>
+                <div>7. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad minima perspiciatis eius architecto
+                    ab
+                    ex!</div>
+                <div>8. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad minima perspiciatis eius architecto
+                    ab
+                    ex!</div>
+                <div>9. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad minima perspiciatis eius architecto
+                    ab
+                    ex!</div>
+                <div>10. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad minima perspiciatis eius
+                    architecto ab
+                    ex!</div>
+            </div>
+            <br>
+            <hr class="sub-hr">
+            <br>
+            <p class="subtitle">Grid</p>
+            <div id="grid">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+                <div class="grid-item">7</div>
+                <div class="grid-item">8</div>
+                <div class="grid-item">9</div>
+                <div class="grid-item">10</div>
+            </div>
+            <br>
+            <hr class="sub-hr">
+            <br>
+            <p class="subtitle">More Grid</p>
+            <p><i>More complex grids</i></p>
+            <div id="grid2">
+                <div class="grid-items item1">Grid item 1 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Repellat itaque laborum quo cum magnam quia animi nesciunt sint tempore eaque.</div>
+                <div class="grid-items item2">Grid item 2</div>
+                <div class="grid-items item3">Grid item 3 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus exercitationem quo repudiandae repellat quod quisquam rem aliquid nisi, ab nobis?</div>
+                <div class="grid-items item4">Grid item 4 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Commodi quos atque consequuntur ipsum quidem dolorem doloremque ea suscipit veniam consectetur.
+                </div>
+                <div class="grid-items item5">Grid item 5 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptatum quas ipsum quod, vel placeat sed similique, nisi asperiores cumque molestias libero,
+                    culpa impedit obcaecati dignissimos incidunt iste iure provident perspiciatis? Voluptate corrupti
+                    accusamus, repellendus, est atque, fugiat praesentium consectetur earum iure eius voluptatem
+                    explicabo expedita doloribus? Officiis tempore velit fugiat, numquam hic quidem. Ullam repellendus
+                    placeat ea quas quibusdam non molestiae voluptatibus ipsum rem, quam quo maxime minima ratione,
+                    fugiat ducimus modi nulla vero quae nesciunt vel doloribus sint eveniet, laborum deleniti! Nihil,
+                    odio! Nihil nobis temporibus excepturi cupiditate? Qui voluptatum ipsum architecto pariatur
+                    laudantium sapiente perferendis minima ad impedit.</div>
+                <div class="grid-items item6">Grid item 6 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Incidunt repudiandae in molestias eveniet, ratione vitae saepe nulla voluptate voluptas quae
+                    adipisci quaerat voluptatibus exercitationem magni suscipit veniam rem sequi optio. Enim
+                    consequ</div>
+                <div class="grid-items item7">Grid item 7 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis a veritatis nulla debitis similique, fugit iusto porro mollitia incidunt aut id quibusdam
+                    illum distinctio soluta eum facilis iure ipsam molestias.</div>
+                <div class="grid-items item8">Grid item 8 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officiis a veritatis nulla debitis similique, fugit iusto porro mollitia incidunt aut id quibusdam
+                    illum distinctio soluta eum facilis iure ipsam molestias.</div>
+            </div>
+        </section>
+        <br>
+        <hr><br>
+        <section class="bootstrap">
+            <p class="title">Bootstrap</p>
+            <p class="subtitle">Of course, some bootstrap components and tools.</p>
         </section>
     </div>
 
