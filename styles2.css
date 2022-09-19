@@ -3,11 +3,13 @@
   background-color: #0000ff;
   font-family: "Open Sans", sans-serif;
 }
+
 .box p {
   color: #fff;
   padding: calc(5% - 30px);
   text-align: justify;
-
+  border-color: #000000;
 }
 
-/*# sourceMappingURL=styles2.css.map */
+
+ /*# sourceMappingURL=styles2.css.map */
